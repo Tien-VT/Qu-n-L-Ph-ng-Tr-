@@ -1,0 +1,997 @@
+/* .header{
+    height: 80px;
+    background-image: linear-gradient(0,#bfe3ddda,#c9dadbe5);
+} */
+/* #main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.header__navbar__top{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(0,#bfe3ddda,#c9dadbe5);
+    height: 80px;
+}
+.header__navbar__top__box{
+    display: flex;
+    justify-content:space-between;
+    background-image: linear-gradient(0,#bfe3ddda,#c9dadbe5);
+    height: 60px;
+    width: 100%;
+}
+.header__navbar__bot{
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(162, 180, 177);
+    height:60px;
+    cursor: pointer;
+}
+.filter-top{
+        background-color: #febb02;
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 100%;
+        border-radius: 8px;
+}
+.header__navbar-list{
+    list-style: none;
+    padding-left:4;
+}
+.header__navbar-item{
+    margin: 8px;
+    font-weight: bold;
+}
+.header__navbar-item__notification{
+    margin: 10px;
+    /* border: 2px solid rgb(56, 48, 48); */
+    display:inline-block ;
+    font-size: 20px;
+    color: #fffff5;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #f73859;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    border-radius: 8px;
+}
+.header__navbar-item,
+.header__navbar-item-link{
+    display:inline-block ;
+    font-size: 20px;
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: 300;
+    padding: 17px 0px;
+    font-weight: bold;
+}
+.header__navbar-item--strong{
+     font-weight: bold;
+     /* border: 1px solid #000;  */
+     padding:  10px; /* Đây là khoảng cách giữa nội dung form và viền */
+     margin: 10px; /* Đây là khoảng cách giữa viền và các phần tử xung quanh */
+     background-color: #f4f4f47d;
+     font-size: 20px;
+     border-radius: 5px;
+}
+
+.header__navbar-item--strong:hover{
+    background-color: #f4f4f43c;
+}
+
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    font-size:1.3rem;
+    color:var(--black-color);
+    text-decoration:none;
+    font-weight: 300;
+}
+.navbar_item-clearfix{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 18px;
+    color: var(--blue-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 8px;
+}
+.navbar_item-clearfix--strong{
+    font-weight: 1000;
+    font-size: 18px;
+    margin: 13px;
+}
+.filter-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 100%;
+    border-radius: 8px;
+    margin: 0px 12px 0px 12px;
+    background-color: #fff;
+    min-width: 210px;
+    height: 35px;
+}
+.filter-item select {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.filter-item__acreage{
+    font-size: 18px;
+}
+.filter-item__money{
+    font-size: 18px;
+}
+.filter-item__phongtro select {
+    font-size: 18px;
+}
+.filter-item__location{
+    font-size: 18px;
+}
+.filter-body{
+    display: flex;
+    justify-content:space-between /*center*/;
+    flex-direction: row;
+    align-items: center;
+    background-color: #febb02;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    font-family:ui-monospace;
+}
+.filter-item span {
+    font-size: .95rem;
+    align-items: center;
+    /* padding: 10px 30px 10px 22px; */
+    white-space: nowrap;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    color: #030303;
+    box-sizing: border-box;
+    outline: 0;
+    margin-right: 8px;
+  }
+  
+
+ .filter-item{
+    display: flex;
+ } 
+.search{
+    background-color: #0071c2 ;
+    color: azure;
+}
+.search1 {
+    color: #ffffff;
+}
+/* kích thước của hình ảnh */
+.classgigido{
+    height: 22px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.hihihi{
+    height: 22px;
+    vertical-align: middle;
+    padding-left: 5px;
+    filter: invert(1);
+
+    
+}
+.hinhanh13{
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+/* Kích thước của hình ảnh */
+/* bố cục của main top Phòng trọ TP Thái Nguyên*/
+.WrapperScroll_wrapperOverflow__Tien2k3{
+    position: relative;
+
+    
+}
+.TrendKeywords_wrapperTrendingKeywords__qYnDr {
+    overflow-x: auto;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 8px;
+    height: 100%;
+    border-radius: 8px;
+    margin: 0px 12px 0px 12px;
+    background: #f4f4f4;
+    min-width: 210px;
+    height: 70px;
+}
+.TrendKeywords_wrapperTrendingKeywords__qYnDr 
+.TrendKeywords_itemKeyword__dPXYt .TrendKeywords_text__Ey_be {
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 16px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.TrendKeywords_wrapperTrendingKeywords__qYnDr 
+.TrendKeywords_itemKeyword__dPXYt {
+    margin-right: 8px;
+    background-color: #fff;
+    text-transform: capitalize;
+    padding: 6px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.WrapperScroll_wrapperOverflow__Tien2k3 i.WrapperScroll_iconPrev__H2ypM
+.TrendKeywords_wrapperTrendingKeywords__qYnDr {
+    overflow-x: auto;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 8px;
+}
+.TrendKeywords_text__Ey_be{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 100%;
+        border-radius: 8px;
+        margin: 0px 12px 0px 12px;
+        /* background-color: #d2bfbf; */
+        min-width: 210px;
+        height: 35px;
+        justify-content: space-between;
+        font-size: 45px;
+        font-weight: bold;
+        
+}
+.TrendKeywords_wrapperTrendingKeywords__qYnDr .TrendKeywords_itemKeyword__dPXYt .TrendKeywords_text__Ey_be {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.WrapperScroll_wrapperOverflow__Tien2k3{
+    width: 100%;
+}
+/* Bố cục của main top */
+/* Bố cục bộ lọc theo giá*/
+.f1r37qkf {
+    color: #222;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f1nxj78y {
+    max-height: 100px;
+    overflow: hidden;
+    color: #030303;
+}
+.fco3q1q{
+    color: #222;
+        display: grid;
+        grid-template-columns: auto; /* Số lượng và kích thước của các cột */
+        gap: 10px; /* Khoảng cách giữa các hàng và cột */
+        font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.s10uuccf {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #306bd9;
+    padding: 0 12px 12px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: auto;
+    cursor: pointer;
+    min-width: 992px;
+    font-size: 16px;
+}
+.f323ho55{
+     display:block;
+     flex-direction: row; /* sắp xếp các mục theo hàng ngang */
+    justify-content: flex-enrd; /* căn lề phải */
+    align-items: center; /* căn giữa các mục theo chiều dọc */
+    width: 25%; /* chiếm 25% chiều rộng của trang web */
+    margin-bottom: 8px;
+    background-color: #fff;
+    /* float: left; */
+    width: 25%;
+    position: relative;
+    
+}
+.f323ho54{
+    display: flex;
+    width: 172px;
+    margin-left: 16px;
+    width: 100%;
+    /* float: left; */
+    list-style: none;
+    flex-direction: row-reverse;
+}
+/* Bố cục bộ lọc theo giá*/
+
+/* Form đăng bài */
+.tien-form{
+    border-radius: 5px;
+    /* background-color:#98b0dd; */
+    width: 100%;
+}
+.tien-form__name{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.tien-form__Address{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.tien-form__container{
+    padding: 0 32px;
+}
+.tien-from__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.tien-form__village{
+    font-weight: bold;
+}
+.khung-post{
+    z-index: 10;
+    background-color: #d6deee;
+    height: 700px;
+    overflow: scroll;
+}
+
+.tien-form__dangbai{
+    font-size: 35px;
+    margin-left: 270px;
+    margin-top: 55px;
+    font-weight:600;
+    display: flex;
+    margin-top: 0px;
+    color: rgb(245, 245, 245);
+    background-color: rgba(255, 62, 28, 0.87);
+    border-radius: 5px;
+    height: 60px;
+    width: 180px;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    text-align: center; /* Căn giữa chữ */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tien-form__form{
+    display: flex;
+    font-size: 20px;
+}
+.tien-form__tuychon{
+    display: flex;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+.tien-form__district{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: 600;
+}
+.tien-form__city{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+.tien-form__ward{
+    margin-right: 25px;
+    font-weight: 600;
+}
+.tien-form__Streetnames{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-right: 90px;
+}
+.form-group{
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.col-form-label{
+    font-size: 20px;
+}
+.col-md-12{
+    font-size: 25px;
+    font-weight: bold;
+}
+.form-control{
+    font-size: 20px;
+    height: 35px;
+}
+.tien-form__adrees{
+    display: flex;
+}
+.tien-form__row{
+    margin-top: 25px;
+    font-size: 25px;
+}
+.tien-group__userzalo{
+    margin-top: 15px;
+}
+.form-text__text-muted{
+    font-size: 16px;
+}
+
+#form_dangtin {
+    padding: 2rem;
+    background: #fff;
+    border: 2px dashed #bbb;
+    text-align: center;
+    cursor: copy;
+}
+.browse_photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 2px dashed #bbb;
+    text-align: center;
+    cursor: copy;
+}
+.browse_photos label{
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+}
+#img-temp{
+    width: 100px;
+    height: 100px;
+}
+.col-form-label{
+    font-size: 20px;
+    font-weight: 700;
+}
+.js-btn-hoan-tat{
+    font-size: 20px;
+    background-color: #d63c3c;
+    color: #fff;
+}
+.js-input-street-number{
+    font-size: 20px;
+    line-height: 30px;
+}
+.js-title{
+    font-size: 30px;
+}
+.form-text__text-mutedzalo{
+    font-size: 16px;
+    font-weight: bold;
+}
+.js-gia-cho-thue{
+    font-size: 20px;
+    height: 35px;
+}
+.mb-3{
+    display: flex;
+}
+.completed{
+    margin-left: 35px;
+    padding-bottom: 25px;
+}
+.dangtaihinhanh {
+    border: 2px solid red;
+    width: 50%;
+    height: 50px;
+  }
+
+/* Form đăng bài */
+
+/* Form đăng kí và đăng nhập */
+.auth-form{
+    border-radius: 5px;
+    background-color:#98b0dd;
+    width: 100%;
+}
+.auth-form__container{
+    padding: 0 32px;
+}
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
+}
+.auth-form__heading{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.auth-form__switch-btn{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    color: red;
+    font-weight:400;
+    cursor: pointer;
+    font-weight: bold;
+}
+.auth-form__input{
+    width: 100%;
+    height: 40px;
+    margin-top:16px ;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    font-weight: bold;
+}
+.auth-form__input:focus{
+    border-color: #777;
+}
+.auth-form__input{
+    font-size: 14px;
+}
+.auth-form__aside{
+    margin-top:18px ;
+}
+.auth-form__policy_text{
+    font-size: 1.6rem;
+    text-align: center; 
+    padding: 0 12px;
+    font-weight: 700;
+}
+.auth-form__text_link{
+    text-decoration: none;
+    color: red;
+}
+.auth-form_controls{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    font-weight: bold;
+}
+.auth-form_controls-back{
+    margin-right: 8px;
+}
+.auth-form_socials{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+    padding: 16px 36px;
+    margin-top: 24px;
+    background-color: #bebe96;
+}
+.auth-form_socials-icon{
+    font-size: 1.8rem;
+}
+.auth-form_socials--facebook{
+    background-color: #3A5A98 ;
+    color: var(--text-color);
+    align-items: center;
+    
+}
+
+.auth-form_socials--facebook
+.auth-form_socials-icon{
+    display: flex;
+    align-items: center;
+    color: var(--while-color);
+    font-style: normal;
+    padding-bottom: 5px;
+    font-weight: bold;
+}   
+.auth-form_socials-title{
+    margin:0 24px;
+    font-size: 12px;
+    font-style: normal;
+}
+.auth-form_socials--google{
+    display: flex;
+    color: #666;
+    background-color:var(--while-color);
+    font-style: normal;
+    width: 48%;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+/* Form đăng kí và đăng nhập  */
+/* Form đăng nhập */
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.auth-form__help-link{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #f4f4f4;
+}
+.auth-form__help-link-separate{
+    display: block;
+    margin: 1px 16px 0;
+    height: 22px;
+    border-left: 1px solid #EAEAEA;
+}
+.auth-form__help-forgot{
+    color:var(--primary-color);
+}
+
+.auth-form-group{
+    display: flex;
+    flex-direction: column;
+}
+.show-warring{
+    font-size: 15px;
+    font-weight: 700;
+    color: red;
+    padding-top: 4px;
+    height: 18px;
+}
+
+/* Form đăng nhập */
+/* Khung sản phẩm */
+.sp3452tf{
+    width: 75%;
+    justify-content: space-between;
+}
+
+.section-header{
+      justify-content: space-between;
+      margin-top: 0;
+      margin-bottom: 15px;
+}
+.section-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.page-update-time{
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.sp34522{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.sp34522_box{
+    display: flex;
+}
+/* Khung sản phẩm */
+/* Khung hiển thị từng phòng trọ */
+.home-product-item__img{
+    display: flex;
+}
+.home-product-item_name{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    display: block;
+    white-space: normal;
+    margin: 0 0 10px;
+}
+.home-product-item_price{
+    font-size: 14px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #dde3dcd8;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.home-product-item_tt {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.home-product-item_tt div {
+    display: flex;
+    flex-direction: column;
+}
+.home-product-item__action{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+.home-product-item__action img{
+    margin: 0 6px;
+
+}
+.home-product-item {
+    border-bottom: 1px solid #65a05b; /* Đường viền dưới màu đen, 1px độ dày */
+    padding-bottom: 20px; /* Khoảng cách từ nội dung của class đến đường viền dưới */
+    margin-bottom: 20px; /* Khoảng cách từ đường viền dưới đến class tiếp theo */
+}
+/* Phần mô tả trọ */
+.home-product-item__mota{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.home-product-item__gioithieu{
+    padding-top: 18px;  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.zalo-chat1 a{
+    text-decoration: none;
+}
+.home-product-item__loaihinh{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Phần mô tả trọ */
+/* Khung hiển thị từng phòng trọ */
+/* Các trang của danh mục phòng trọ */
+
+.pagination {
+    margin: 20px 0 50px;
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    cursor: pointer;
+}
+.pagination .page-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    margin: 5px; 
+}
+.page-item.active > .page-link {
+    border: 1px solid #000;
+    padding: 5px 10px;
+    background-color: #e5e8eae7;
+    height: 50px;
+    font-weight: bold;
+  }
+
+  .pagination .page-item .page-link {
+    display: block;
+    padding: 15px 18px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ddd6d6;
+    border: 1px solid #f1f1f1;
+   
+}
+
+/* Các trang của danh mục phòng trọ */
+
+/* Thẻ body */
+body{
+    position: relative;
+}
+/* Thẻ body */
+.form{
+    display: none;
+    /* display: flex; */
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    background-color: #000000ba;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.auth-form{
+    max-width: 700px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#input-file{
+    display: none;
+}
+
+.section-back{
+    display: none;
+    padding: 4px;
+    font-size: 14px;
+    border: 2px solid #333;
+    background-color: #7df1b3;
+    margin-left: 8px;
+    border-radius: 5px;
+}
+/* footer */
+/* phần cuối cùng */
+.footer {
+    padding-top: 12px;
+    border-top: 4px solid var(--primary-color);
+    background-color: var(--white-color);
+    font-size: 20px;
+}
+
+.footer__heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #737373;
+    padding: 3px 0;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer-item__icon {
+    font-size: 1.6rem;
+    margin: -1px 8px 0 0;
+}
+
+.footer__download {
+    display: flex;
+}
+
+.footer__download-qr {
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--border-color);
+}
+
+.footer__download-apps {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__download-app-img {
+    height: 20px;
+}
+
+.footer__download-app-link {
+    text-decoration: none;
+    color: transparent;
+    padding: 4px 0;
+}
+
+/* footer bottom */
+.footer__bottom {
+    padding: 4px 0;
+    background-color: #f5f5f5;
+}
+
+.footer__ending-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.footer__ending-item {
+    margin: 26px 0;
+    font-size: 1.2rem;
+    color: #737373;
+    padding: 0 26px;
+    border-right: 1px solid var(--border-color);
+}
+
+.footer__ending-item:last-child {
+    border: none;
+}
+
+.footer__infor-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__infor-item {
+    margin-bottom: 4px;
+    font-family: emoji;
+}
+
+.footer__infor-item:nth-child(1) {
+    margin-bottom: 6px;
+}
+
+.footer__infor-item:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.footer__infor-item:nth-child(5) {
+    margin: 0;
+}
+
+.footer__infor-item-img {
+    height: 32px;
+}
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+    font-weight: 700;
+}
+.estateType1{
+font-family: 'Times New Roman', Times, serif;
+}
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83,3334%;
+}
+

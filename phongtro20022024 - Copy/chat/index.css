@@ -1,0 +1,24 @@
+.chat{
+    width: 500px;
+    margin: 0 auto;
+}
+.msg-content{
+    height: 400px;
+    background-color:#efefef ;
+    overflow-y: auto;
+}
+.msg-content .msg-item{
+    background: #00a8ed;
+    color: #fff;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 25px;
+    padding: 5px 10px;
+    position: relative;
+}
+.msg-content .msg-item label{
+    position:absolute;
+    bottom: -22px;
+    color: #333;
+    font-size: 12px;
+}

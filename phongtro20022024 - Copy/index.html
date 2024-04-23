@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- <link rel="stylesheet" href="link rel=" preconnect href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <!-- Block Element Modifier -->
+  <div class="app">
+    <header class="header">
+
+      <nav class="header__navbar__top">
+        <div class="grid">
+          <div class="header__navbar__top__box">
+            <ul class="header__navbar-list">
+              <img src="./img/Thông-báo.svg" alt="" class="classgigido">
+              <li class="header__navbar-item">Thông báo </li>
+              <li class="header__navbar-item__notification">Đăng bài <img src="./img/baidangmoi.svg" alt=""
+                  class="hihihi"></li>
+            </ul>
+            <ul class="header__navbar-list">
+              <div class="header__navbar-list__infor">
+                <li class="header__navbar-item header__navbar-item--strong">
+                  <img src="./img/user-solid.svg" alt="" class="classgigido">
+                  <span class="user-name"></span>
+                </li>
+                <li id="logout-btn" class="header__navbar-item header__navbar-item--strong">
+                  đăng xuất
+                  <img src="./img/Đăng-nhập.svg" alt="" class="classgigido">
+                </li>
+                <li class="header__navbar-item">Chat
+                  <img src="./img/chat.svg" alt="" class="classgigido">
+                </li>
+              </div>
+
+              <div class="header__navbar-list__log">
+                <li class="header__navbar-item header__navbar-item--strong create-btn">Đăng kí
+                  <img src="./img/user-solid.svg" alt="" class="classgigido">
+                </li>
+
+                <li class="header__navbar-item header__navbar-item--strong login-btn">Đăng nhập
+                  <img src="./img/Đăng-nhập.svg" alt="" class="classgigido">
+                </li>
+                <li class="header__navbar-item">Chat
+                  <img src="./img/chat.svg" alt="" class="classgigido">
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="header__navbar__bot">
+        <div class="grid">
+          <div class="header__navbar__bot__box">
+            <ul id="menu-main-menu" class="container-menu clearfix level-1">
+              <img src="./img/house-solid.svg" alt="" class="classgigido">
+              <li class="navbar_item-clearfix navbar_item-clearfix--strong ">
+                <a href="/" style="text-decoration: none;color: black;">Trang chủ</a>
+              </li>
+              <li class="navbar_item-clearfix active current-menu-item">Phòng trọ,nhà trọ</a></li>
+              <li class="navbar_item-clearfix navbar_item-clearfix--strong ">Căn hộ mini</a></li>
+              <li class="navbar_item-clearfix navbar_item-clearfix--strong">Nhà nguyên căn</a></li>
+              <li class="navbar_item-clearfix navbar_item-clearfix--strong">Căn hộ,dịch vụ</a></li>
+              <li class="navbar_item-clearfix navbar_item-clearfix--strong">Tìm người ở ghép</a></li>
+              <li class="navbar_item-clearfix navbar_item-clearfix--strong" ><a href="/blog.html" style="text-decoration: none;color: rgb(19, 18, 18); font-size: 20px;">Bài đăng mới</a></li>
+              <img src="./img/hình trái đất.svg" alt="" class="classgigido">
+            </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div id="main">
+        <div style="height: 60px;  margin-bottom:10px;">
+          <section id="filter-top-inner">
+            <section id=" filter-top">
+              <div class="grid">
+                <div class="filter-body">
+                  <div class="filter-item post-estate-type js-filter-show-popup-estate-type active">
+                    <img src="./img/hotel-solid.svg" alt="" class="classgigido">
+                    <div class="filter-item__phongtro">
+                      <select name="estateType" id="estateType1">
+                        <option value="phongtro">Phòng trọ,nhà trọ</option>
+                        <option value="canho">Căn hộ mini</option>
+                        <option value="nhanguyencan">Nhà nguyên căn</option>
+                        <option value="dichvu">Căn hộ,dịch vụ</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="filter-item location js-filter-show-popup-city active">
+                    <img src="./img/vị trí.svg" alt="" class="classgigido">
+                    <div class="filter-item__location">
+                      <select name="estateType" id="estateType2">
+                        <option value="thainguyen">Thái Nguyên</option>
+                        <option value="hanoi">Hà Nội</option>
+                        <option value="bacgiang">Bắc Giang</option>
+                        <option value="backan">Bắc Kạn</option>
+                        <option value="quangtri">Quảng Trị</option>
+                        <option value="hue">Huế</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="filter-item post-price js-filter-show-popup-price">
+                    <img src="./img/money.svg" alt="" class="classgigido">
+                    <div class="filter-item__money">
+                      <select name="estateType" id="estateType3">
+                        <option value="duoi1">Giá dưới 1 triệu</option>
+                        <option value="duoi500">Giá 1-2 triệu</option>
+                        <option value="2den3">Giá 2-3 triệu</option>
+                        <option value="3den4">Giá 3-4 triệu</option>
+                        <option value="4den5">Giá 4-5 triệu</option>
+                        <option value="5den6">Giá 5-6 triệu</option>
+                        <option value="6den7">Giá 6-7 triệu</option>
+                      </select>
+                    </div>
+                    <!---->
+                  </div>
+                  <div class="filter-item post-acreage js-filter-show-popup-acreage">
+                    <div class="filter-item__acreage">
+                      <select name="estateType" id="estateType4">
+                        <option value="duoi20">Dưới 20m²</option>
+                        <option value="20den30">20m²-30m²</option>
+                        <option value="30den40">30m²-40m²</option>
+                        <option value="40den50">40m²-50m²</option>
+                        <option value="tren50">Trên 50m²</option>
+                      </select>
+                    </div>
+
+                    <!---->
+                  </div>
+                  <div class=" filter-item search post-acreage js-filter-show-popup-acreage" style="cursor: pointer;">
+                    <img src="./img/search.svg" alt="" class="search">
+                    <span class="findRoom">Tìm kiếm</span>
+                    <!---->
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+      </div>
+      <div class="hello">
+        <div class="WrapperScroll_wrapperOverflow__Tien2k3">
+          <div class="TrendKeywords_wrapperTrendingKeywords__qYnDr">
+            <div class="TrendKeywords_itemKeyword__dPXYt">
+              <a class="TrendKeywords_text__Ey_be" style="color:#fe9900;width:94px"
+                href="/thue-phong-tro-thanh_pho_thai-nguyen">Phòng Trọ Thái Nguyên</a>
+            </div>
+            <div class="TrendKeywords_itemKeyword__dPXYt">
+              <a class="TrendKeywords_text__Ey_be" style="color:#38699f;width:94px"
+                href="/thue-phong-tro-thanh-pho-song-cong">Phòng Trọ Sông Công</a>
+            </div>
+            <div class="TrendKeywords_itemKeyword__dPXYt">
+              <a class="TrendKeywords_text__Ey_be" style="color:#589f39;width:94px"
+                href="/thue-phong-tro-thi-xa-pho-yen-tinh-thai-nguyen">Phòng Trọ Phổ Yên</a>
+            </div>
+            <div class="TrendKeywords_itemKeyword__dPXYt">
+              <a class="TrendKeywords_text__Ey_be" style="color:#0094a3;width:94px"
+                href="/thue-phong-tro-huyen-phu-binh-tinh-thai-nguyen">Thuê phòng Phú Bình</a>
+            </div>
+            <div class="TrendKeywords_itemKeyword__dPXYt">
+              <a class="TrendKeywords_text__Ey_be" style="color:#d0021b;width:94px"
+                href="/thue-phong-tro-huyen-dong-hy-tinh-thai-nguyen">Phòng Trọ Đồng Hỷ</a>
+            </div>
+            <div class="TrendKeywords_itemKeyword__dPXYt">
+              <a class="TrendKeywords_text__Ey_be" style="color:#fe9900;width:130px"
+                href="/thue-phong-tro-huyen-dai-tu-tinh-thai-nguyen">Phòng Trọ Đại Từ</a>
+            </div>
+            <div class="TrendKeywords_itemKeyword__dPXYt">
+              <a class="TrendKeywords_text__Ey_be" style="color:#38699f;width:94px"
+                href="/thue-phong-tro-huyen-dinh-hoa-tinh-thai-nguyen">Phòng Trọ Định Hóa</a>
+            </div>
+            <div class="TrendKeywords_itemKeyword__dPXYt">
+              <a class="TrendKeywords_text__Ey_be" style="color:#589f39;width:130px"
+                href="/thue-phong-tro-huyen-phu-luong-tinh-thai-nguyen">Phòng Trọ Phú Lương</a>
+            </div>
+            <div class="TrendKeywords_itemKeyword__dPXYt">
+              <a class="TrendKeywords_text__Ey_be" style="color:#0094a3;width:130px"
+                href="/tags/phong-tro-sinh-vien-gia-re-tptn">Trọ giá rẻ TPTN</a>
+            </div>
+            <div class="TrendKeywords_itemKeyword__dPXYt">
+              <a class="TrendKeywords_text__Ey_be" style="color:#d0021b;width:130px"
+                href="/tags/phong-tro-duoi-2-trieu-tptn">Trọ dưới 2 triệu TPTN</a>
+            </div>
+          </div><i class="WrapperScroll_iconPrev__H2ypM false" tabindex="0" role="button" aria-label="Prev"></i><i
+            class="WrapperScroll_iconNext__IiL_D WrapperScroll_iconNextActive__QZW9s" tabindex="0" role="button"
+            aria-label="Next"></i>
+        </div>
+        <div class="f323ho54">
+          <div class="class f323ho55">
+            <div class="f4o3e2h">
+              <div class="f1r37qkf" style="--f1r37qkf-0:-90deg">
+                <p>Lọc theo khoảng giá</p>
+                <div class="w1qukn5p"></div>
+                <img src="./img/mũi tên đi xuống.svg" alt="" class="classgigido">
+              </div>
+              <div class="  f1nxj78y">
+                <ul class="fqbn84m">
+                  <a href="/thue-phong-tro-tp-thai-nguyen-gia-duoi-1-trieu-sdpr1" class="fco3q1q">
+                    <span>Giá dưới 1 triệu</span>
+                  </a>
+                  <a href="/thue-phong-tro-tp-thai-nguyen-gia-tu-1-trieu-den-2-trieu-sdpr2" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Giá 1 - 2 triệu</span>
+                  </a>
+                  <a href="/thue-phong-tro-tp-thai-nguyen-gia-tu-2-trieu-den-3-trieu-sdpr3" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Giá 2 - 3 triệu</span></a>
+                  <a href="/thue-phong-tro-tp-thai-nguyen-gia-tu-3-trieu-den-5-trieu-sdpr4" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Giá 3 - 5 triệu</span>
+                  </a>
+                  <a href="/thue-phong-tro-tp-thai-nguyen-gia-tu-5-trieu-den-7-trieu-sdpr5" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Giá 5 - 7 triệu</span>
+                  </a>
+                  <a href="/thue-phong-tro-tp-thai-nguyen-gia-tren-7-trieu-sdpr6" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Giá trên 7 triệu</span>
+                  </a>
+                </ul>
+              </div>
+              <div class="s10uuccf" style="--s10uuccf-0: 0deg;">Xem thêm<img alt="see more icon"
+                  src="https://static.chotot.com/storage/default_images/project/downIcon.svg" width="16" height="16">
+              </div>
+            </div>
+            <div class="f4o3e2h">
+              <div class="f1r37qkf" style="--f1r37qkf-0:-90deg">
+                <p>Lọc theo diện tích</p>
+                <div class="w1qukn5p"> <img src="./img/mũi tên đi xuống.svg" alt="" class="classgigido"></div>
+              </div>
+              <div class="  f1nxj78y">
+                <ul class="fqbn84m">
+                  <a href="/thue-phong-tro-tp-thai-nguyen-dien-tich-duoi-20m2-sdsi1" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Dưới 20 m²</span>
+                  </a>
+                  <a href="/thue-phong-tro-tp-thai-nguyen-dien-tich-tu-20m2-den-30m2-sdsi2" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">20- 30 m²</span>
+                  </a>
+                  <a href="/thue-phong-tro-tp-thai-nguyen-dien-tich-tu-30m2-den-40m2-sdsi3" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">30-40 m²</span>
+                  </a>
+                  <a href="/thue-phong-tro-tp-thai-nguyen-dien-tich-tu-40m2-den-50m2-sdsi4" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">40- 50 m²</span>
+                  </a>
+                  <a href="/thue-phong-tro-tp-thai-nguyen-dien-tich-tren-50m2-sdsi5" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Trên 50 m²</span>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="f4o3e2h">
+              <div class="f1r37qkf" style="--f1r37qkf-0:-90deg">
+                <p>Lọc theo tình trạng nội thất</p>
+                <div class="w1qukn5p"> <img src="./img/mũi tên đi xuống.svg" alt="" class="classgigido"></div>
+              </div>
+              <div class="  f1nxj78y">
+                <ul class="fqbn84m">
+                  <a href="/thue-phong-tro-noi-that-cao-cap-tp-ho-chi-minh-sdfr1" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Nội thất cao cấp</span>
+                  </a>
+                  <a href="/thue-phong-tro-noi-that-day-du-tp-ho-chi-minh-sdfr2" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Nội thất đầy đủ</span>
+                  </a>
+                  <a href="/thue-phong-tro-khong-noi-that-tp-ho-chi-minh-sdfr3" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Nhà trống</span>
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="f4o3e2h">
+              <div class="f1r37qkf" style="--f1r37qkf-0:-90deg">
+                <p>Thuê phòng trọ</p>
+                <div class="w1qukn5p"> <img src="./img/mũi tên đi xuống.svg" alt="" class="classgigido">
+                </div>
+              </div>
+              <div class="  f1nxj78y">
+                <ul class="fqbn84m"><a href="/thue-phong-tro-thanh-pho-thu-duc-tp-ho-chi-minh" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Thành phố Thái Nguyên</span>
+                  </a>
+                  <a href="/thue-phong-tro-thanh-pho-song-cong" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Thành phố Sông Công</span>
+                  </a>
+                  <a href="/thue-phong-tro-quan-3-thai-nguyen" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Phú Bình</span></a><a href="/thue-phong-tro-phu-binh-thai-nguyen" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Phổ Yên</span></a><a href="/thue-phong-tro-pho-yen-thai-nguyen" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Đồng Hỷ</span></a><a href="/thue-phong-tro-dong-hy-thai-nguyen" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Định Hóa</span></a><a href="/thue-phong-dinh-hoa-thai-nguyen" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Phú Lương</span></a><a href="/thue-phong-tphu-luong-thai-nguyen" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Võ
+                      Nhai</span></a><a href="/thue-phong-vo-nhai-thai-nguyen" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Đại Từ</span></a><a href="/thue-phong-dai-tu-thai-nguyen" class="fco3q1q">
+                    Xem thêm<img alt="see more icon"
+                      src="https://static.chotot.com/storage/default_images/project/downIcon.svg" width="16"
+                      height="16">
+              </div>
+            </div>
+            <div class="f4o3e2h">
+              <div class="f1r37qkf" style="--f1r37qkf-0:-90deg">
+                <p>Phòng trọ gần đây</p>
+                <div class="w1qukn5p"></div>
+                <img src="./img/mũi tên đi xuống.svg" alt="" class="classgigido">
+              </div>
+              <div class="  f1nxj78y">
+                <ul class="fqbn84m"><a href="thue-phong-tro-gan-cho-ba-chieu-quan-binh-thanh-sdse338317"
+                    class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">
+                      Thuê phòng trọ CNTT<!-- --> </span></a><a href="thue-phong-tro-gan-CNTT-sdse338296"
+                    class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">
+                      Thuê phòng trọ gần bệnh viện Đa Khoa<!-- --> </span></a><a
+                    href="thue-phong-tro-gan-benh-vien-da-khoa-sdse338335" class="fco3q1q">
+                    <span> <img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Thuê phòng trọ gần hồ Xương Rồng<!-- --> </span></a><a
+                    href="thue-phong-tro-duong-3-2-quan-10-sdse340276" class="fco3q1q">
+                    <span> <img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Thuê phòng trọ trường Khoa Học<!-- --> </span></a><a
+                    href="thue-phong-tro-truong-khoa-hoc-sdse340405" class="fco3q1q">
+                    <span> <img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Thuê phòng trọ trường Kinh Tế<!-- --> </span></a><a
+                    href="thue-phong-tro-truong-kinh-tesdse340374" class="fco3q1q">
+                    <span> <img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Thuê phòng trọ trường Ngoại Ngữ<!-- --> </span></a><a
+                    href="thue-phong-tro-truong-ngoai-ngu-sdse340311" class="fco3q1q">
+                    <span> <img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Thuê phòng trọ trường Y<!-- --> </span></a><a
+                    href="thue-phong-tro-gan-truong-y-sdse338302" class="fco3q1q">
+                    <span> <img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Thuê phòng trọ trường Y Dược<!-- --> </span></a><a
+                    href="thue-phong-tro-gan-truong-y-duoc-sdse338318" class="fco3q1q">
+                    <span> <img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">Thuê phòng trọ trường Công Nghiệp<!-- --> </span></a><a
+                    href="thue-phong-tro-gan-truong-cong-nghiep-sdse338327" class="fco3q1q">
+                    <span><img alt="see more icon"
+                        src="https://static.chotot.com/storage/chotot-icons/svg/right-chevron.svg" width="16"
+                        height="16">
+                      Thuê phòng trọ Đại Học Thái Nguyên<!-- --> </span></a></ul>
+              </div>
+              <div class="s10uuccf" style="--s10uuccf-0: 0deg;">Xem thêm<img alt="see more icon"
+                  src="https://static.chotot.com/storage/default_images/project/downIcon.svg" width="16" height="16">
+              </div>
+            </div>
+          </div>
+          <div class="sp3452tf">
+            <div class="sp34522">
+              <div class="sp34522_box">
+                <span class="section-title">Tổng 3 kết quả</span>
+                <span class="section-back">Trở lại</span>
+              </div>
+              <span class="page-update-time" style="float:right;">Cập nhật: <time
+                  title="Chủ Nhật, 16:50 08/01/2023">16:50
+                  08/01/2023</time></span>
+            </div>
+            <div class="home-product">
+              <div class="home-product1">
+                <!-- khung dựng các sản phẩm -->
+                <div class="home-product-item">
+                  <div class="home-product-item__img">
+                    <div class="home-product-item_picture">
+                      <img src="./img/phongtroxomnuoc2.jpg" alt="" class="hinhanh13">
+                    </div>
+                    <div class="home-product-item_price">
+                      <div class="home-product-item_gt">
+                        <h4 class="home-product-item_name">Cho thuê phòng trọ xóm nước Hai</h4>
+                      </div>
+                      <div class="home-product-item__loaihinh">
+                        <span class="home-product-item__name">Loại hình:</span>
+                        <span class="home-product-item__type">Phòng trọ,nhà trọ</span>
+                      </div>
+                      <div class="home-product-item_tt">
+                        <span class="home-product-item__price-old"><img src="./img/money.svg" alt=""
+                            class="classgigido">
+                          <span class="home-product-item__price__text">500.000đ</span>
+                        </span>
+                        <span class="home-product-item__acreage">35m²</span>
+                        <span class="home-product-item__Address">
+                          <img src="./img/vị trí.svg" alt="" class="classgigido">
+                          <span class="home-product-item__Address__text">
+                            Xã Quyết Thắng-TP Thái Nguyên
+                          </span>
+                        </span>
+                      </div>
+                      <div class="home-product-item__gioithieu">
+                        <span class="home-product-item__mota">Phòng trọ tự quản,không chung chủ,giá wifi 65.000đ/tháng
+                          ,giá
+                          nước 10.000đ/m^3 và giá điện 3.500đ/tháng</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <div class="">
+                          <img src="./img/dienthoai.svg" alt="" class="classgigido">
+                          <span class="home-product-item__callphone">0837434231</span>
+                        </div>
+                        <div class="zalo-chat1">
+                          <a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F%3Fnull"
+                            target="_self">
+                            <img src="./img/nhắntin.svg" alt="" class="classgigido">
+                            <span class="home-product-item__chatzalo">Nhắn tin Zalo</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-product-item">
+                  <div class="home-product-item__img">
+                    <div class="home-product-item_picture">
+                      <img src="./img/Phongtro1.jpg" alt="" class="hinhanh13">
+                    </div>
+                    <div class="home-product-item_price">
+                      <div class="home-product-item_gt">
+                        <h4 class="home-product-item_name">Cho thuê phòng trọ xóm nước Hai,xóm trọ nhà ông Mão</h4>
+                      </div>
+                      <div class="home-product-item__loaihinh">
+                        <span class="home-product-item__name">Loại hình:</span>
+                        <span class="home-product-item__type">Phòng trọ,nhà trọ</span>
+                      </div>
+                      <div class="home-product-item_tt">
+                        <span class="home-product-item__price-old"><img src="./img/money.svg" alt=""
+                            class="classgigido">
+                          <span class="home-product-item__price__text">1.000.000đ</span>
+                        </span>
+                        <span class="home-product-item__acreage">25m²</span>
+                        <span class="home-product-item__Address"><img src="./img/vị trí.svg" alt="" class="classgigido">
+
+                          <span class="home-product-item__Address__text">
+                            Xã Quyết Thắng-TP Thái Nguyên</span>
+                        </span>
+                      </div>
+                      <div class="home-product-item__gioithieu">
+                        <span class="home-product-item__mota">Phòng trọ chung chủ,giá wifi 15.000đ/tháng ,giá nước
+                          15.000đ/m^3 và giá điện 3.000đ/tháng,đóng cửa trước 11h</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <div class="">
+                          <img src="./img/dienthoai.svg" alt="" class="classgigido">
+                          <span class="home-product-item__callphone">0837434231</span>
+                        </div>
+                        <div class="zalo-chat1">
+                          <a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F%3Fnull"
+                            target="_self">
+                            <img src="./img/nhắntin.svg" alt="" class="classgigido">
+                            <span class="home-product-item__chatzalo">Nhắn tin Zalo</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-product-item">
+                  <div class="home-product-item__img">
+                    <div class="home-product-item_picture">
+                      <img src="./img/phongtro2.jpg" alt="" class="hinhanh13">
+                    </div>
+                    <div class="home-product-item_price">
+                      <div class="home-product-item_gt">
+                        <h4 class="home-product-item_name">Cho thuê phòng trọ xóm nước Hai</h4>
+                      </div>
+                      <div class="home-product-item__loaihinh">
+                        <span class="home-product-item__name">Loại hình:</span>
+                        <span class="home-product-item__type">Căn hộ mini</span>
+                      </div>
+                      <div class="home-product-item_tt">
+                        <span class="home-product-item__price-old"><img src="./img/money.svg" alt=""
+                            class="classgigido">
+                          <span class="home-product-item__price__text">500.000đ</span></span>
+                        <span class="home-product-item__acreage">35m²</span>
+                        <span class="home-product-item__Address"><img src="./img/vị trí.svg" alt="" class="classgigido">
+
+                          <span class="home-product-item__Address__text">
+                            Xã Quyết Thắng-TP Thái Nguyên</span>
+                        </span>
+                      </div>
+                      <div class="home-product-item__gioithieu">
+                        <span class="home-product-item__mota">Phòng trọ tự quản,không chung chủ,giá wifi 65.000đ/tháng
+                          ,giá
+                          nước 10.000đ/m^3 và giá điện 3.500đ/tháng</span>
+                        <span class="home-product-item__mota">Cam kết hình ảnh và giá tiền đúng với mô tả</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <div class="">
+                          <img src="./img/dienthoai.svg" alt="" class="classgigido">
+                          <span class="home-product-item__callphone">024612355</span>
+                        </div>
+                        <div class="zalo-chat1">
+                          <a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F%3Fnull"
+                            target="_self">
+                            <img src="./img/nhắntin.svg" alt="" class="classgigido">
+                            <span class="home-product-item__chatzalo">Nhắn tin Zalo</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-product-item">
+                  <div class="home-product-item__img">
+                    <div class="home-product-item_picture">
+                      <img src="./img/phongtro3.jpg" alt="" class="hinhanh13">
+                    </div>
+                    <div class="home-product-item_price">
+                      <div class="home-product-item_gt">
+                        <h4 class="home-product-item_name">Cho thuê phòng trọ cổng phụ CNTT</h4>
+                      </div>
+                      <div class="home-product-item__loaihinh">
+                        <span class="home-product-item__name">Loại hình:</span>
+                        <span class="home-product-item__type">Phòng trọ,nhà trọ</span>
+                      </div>
+                      <div class="home-product-item_tt">
+                        <span class="home-product-item__price-old"><img src="./img/money.svg" alt=""
+                            class="classgigido">
+                          <span class="home-product-item__price__text">5.000.000đ</span></span>
+                        <span class="home-product-item__acreage">45m²</span>
+                        <span class="home-product-item__Address"><img src="./img/vị trí.svg" alt="" class="classgigido">
+
+                          <span class="home-product-item__Address__text">
+                            Xã Quyết Thắng-TP Thái Nguyên
+                          </span>
+                        </span>
+                      </div>
+                      <div class="home-product-item__gioithieu">
+                        <span class="home-product-item__mota">Trọ ở ghép tối đa 4 người , có điều hòa nóng lạnh đầy
+                          đủ.</span>
+                        <span class="home-product-item__mota">Phòng trọ tự quản,không chung chủ,giá wifi 65.000đ/tháng
+                          ,giá
+                          nước 10.000đ/m^3 và giá điện 3.500đ/tháng</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <div class="">
+                          <img src="./img/dienthoai.svg" alt="" class="classgigido">
+                          <span class="home-product-item__callphone">0234246431</span>
+                        </div>
+                        <div class="zalo-chat1">
+                          <a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F%3Fnull"
+                            target="_self">
+                            <img src="./img/nhắntin.svg" alt="" class="classgigido">
+                            <span class="home-product-item__chatzalo">Nhắn tin Zalo</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-product-item">
+                  <div class="home-product-item__img">
+                    <div class="home-product-item_picture">
+                      <img src="./img/phongtro4.jpg" alt="" class="hinhanh13">
+                    </div>
+                    <div class="home-product-item_price">
+                      <div class="home-product-item_gt">
+                        <h4 class="home-product-item_name">Cho thuê phòng trọ khu vực Gym thể hình trẻ</h4>
+                      </div>
+                      <div class="home-product-item__loaihinh">
+                        <span class="home-product-item__name">Loại hình:</span>
+                        <span class="home-product-item__type">Chung cư</span>
+                      </div>
+                      <div class="home-product-item_tt">
+                        <span class="home-product-item__price-old">
+                          <img src="./img/money.svg" alt="" class="classgigido">
+                          <span class="home-product-item__price__text">800.000đ</span>
+                        </span>
+                        <span class="home-product-item__acreage">15m²</span>
+                        <span class="home-product-item__Address"><img src="./img/vị trí.svg" alt="" class="classgigido">
+
+                          <span class="home-product-item__Address__text">
+                            Xã Quyết Thắng-TP Thái Nguyên
+                          </span>
+                        </span>
+                      </div>
+                      <div class="home-product-item__gioithieu">
+                        <span class="home-product-item__mota">Phòng trọ sạch sẽ thoáng mát và đầy đủ điều hòa nóng
+                          lạnh</span>
+                        <span class="home-product-item__mota">Phòng trọ tự quản,không chung chủ,giá wifi 65.000đ/tháng
+                          ,giá
+                          nước 10.000đ/m^3 và giá điện 3.500đ/tháng</span>
+                      </div>
+                      <div class="home-product-item__action">
+                        <div class="">
+                          <img src="./img/dienthoai.svg" alt="" class="classgigido">
+                          <span class="home-product-item__callphone">09399224551</span>
+                        </div>
+                        <div class="zalo-chat1">
+                          <a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F%3Fnull"
+                            target="_self">
+                            <img src="./img/nhắntin.svg" alt="" class="classgigido">
+                            <span class="home-product-item__chatzalo">Nhắn tin Zalo</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="pagination">
+                <li class="page-item active"><span class="page-link">« Trang trước</span></li>
+                <li class="page-item active"><span class="page-link">1</span></li>
+                <li class="page-item active"><span class="page-link">2</span></li>
+                <li class="page-item active"><span class="page-link">3</span></li>
+                <li class="page-item active"><span class="page-link">....</span></li>
+                <li class="page-item active"><span class="page-link"> Trang sau »</span></li>
+                <!-- <li class="page-item"><a class="page-link"
+                    href="https://phongtro123.com/tinh-thanh/ho-chi-minh?page=2">2</a></li>
+                <li class="page-item"><a class="page-link"
+                    href="https://phongtro123.com/tinh-thanh/ho-chi-minh?page=3">3</a></li>
+                <li class="page-item"><a class="page-link"
+                    href="https://phongtro123.com/tinh-thanh/ho-chi-minh?page=4">4</a></li>
+                <li class="page-item disabled"><span class="page-link">...</span></li>
+                <li class="page-item"><a class="page-link" href="https://phongtro123.com/tinh-thanh/ho-chi-minh?page=3042"
+                    rel="next">»»</a></li>
+                <li class="page-item"><a class="page-link" href="https://phongtro123.com/tinh-thanh/ho-chi-minh?page=2"
+                    rel="next">Trang sau »</a></li> -->
+              </ul>
+            </div>
+            <!-- Khung dựng các sản phẩm -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="grid">
+        <div class="grid__row">
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <div class="footer-item__link">Trung tâm trợ giúp</div>
+              </li>
+              <li class="footer-item">
+                <div class="footer-item__link">Phòng trọ</div>
+              </li>
+              <li class="footer-item">
+                <div class="footer-item__link">Hướng dẫn tìm trọ</div>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Giới thiệu</h3>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <div class="footer-item__link">Giới thiệu</div>
+              </li>
+              <li class="footer-item">
+                <div class="footer-item__link">Tuyển dụng</div>
+              </li>
+              <li class="footer-item">
+                <div class="footer-item__link">Điều khoản</div>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Danh mục</h3>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <div class="footer-item__link">Phòng trọ giá rẻ</div>
+              </li>
+              <li class="footer-item">
+                <div class="footer-item__link">Căn hộ mini</div>
+              </li>
+              <li class="footer-item">
+                <div class="footer-item__link">Nhà cho thuê</div>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Thông tin-Liên hệ</h3>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <div class="footer-item__link">
+                  <a href="https://www.facebook.com/profile.php?id=100046382746688" class="footer-item__link"
+                    style="margin-bottom: 2px;">
+                    <img src="./img/facebook.svg" alt="" class="classgigido" style="padding-right:6px ;">
+                    Facebook
+                  </a>
+                </div>
+              </li>
+              <li class="footer-item">
+                <div class="footer-item__link">
+                  <a href="https://www.google.com/search?q=gg+&amp;sca_esv=cde60af824fa692d&amp;sxsrf=ACQVn0_V8oaIr1dm7nWwpXDSjPkISKcP0A%3A1708392175357&amp;ei=7_7TZYyxFe6C2roPt-6JsAc&amp;udm=&amp;ved=0ahUKEwjM5P7l4LiEAxVugVYBHTd3AnYQ4dUDCBA&amp;uact=5&amp;oq=gg+&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiA2dnIDIKECMYgAQYigUYJzIKECMYgAQYigUYJzIEECMYJzIFEAAYgAQyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwFI1BFQnQRYzA5wAXgBkAEAmAHDAaABiAWqAQMwLjS4AQPIAQD4AQHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICGRAuGIAEGIoFGEMYxwEYrwEYyAMYsAPYAQHCAhMQLhiABBiKBRhDGMgDGLAD2AEBiAYBkAYMugYECAEYCA&amp;sclient=gws-wiz-serp"
+                    class="footer-item__link">
+                    <img src="./img/google.svg" alt="" class="classgigido" style="padding-right:6px ;">
+                    Google
+                  </a>
+                </div>
+              </li>
+              <li class="footer-item">
+                <div class="footer-item__link">
+                  <i class="footer-item__icon fa-brands fa-linkedin">
+                    <img src="./img/dienthoai.svg" alt="" class="classgigido">
+                    0915663123
+                  </i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column-2-4">
+            <h3 class="footer__heading">Công cụ-Tiện ích</h3>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <div class="footer-item__link">
+                  <span>Phòng trọ gần TTX</span>
+                </div>
+              </li>
+              <li class="footer-item">
+                <div class="footer-item__link">
+                  <span>Phòng trọ gần trường</span>
+                </div>
+              </li>
+              <li class="footer-item">
+                <div class="footer-item__link">
+                  <span>Bất động sản Thái Nguyên</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="grid">
+          <ul class="footer__ending-list">
+            <li class="footer__ending-item">CHÍNH SÁCH BẢO MẬT</li>
+            <li class="footer__ending-item">QUY CHẾ HOẠT ĐỘNG</li>
+            <li class="footer__ending-item">CHÍNH SÁCH ĐẶT PHÒNG</li>
+            <li class="footer__ending-item">CHÍNH SÁCH TRẢ PHÒNG VÀ HOÀN TIỀN</li>
+          </ul>
+
+          <ul class="footer__infor-list">
+            <li class="footer__infor-item">
+              <img src="./img/dangki.jpg" alt="Đã đăng kí" class="footer__infor-item-img">
+            </li>
+            <li class="footer__infor-item">Nhóm Tiến Thế Lâm Quang</li>
+            <li class="footer__infor-item">Địa chỉ: Xã Quyết Thắng,Thành Phố Thái Nguyên,Thái Nguyên</li>
+            <li class="footer__infor-item">Bạn hãy liên hệ với chúng tôi qua phương tiện truyền thông hoặc qua số
+              hotline</li>
+            <li class="footer__infor-item">© 2024 - Bản quyền thuộc về nhóm Tiến Thế Lâm Quang</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Dựng form đăng nhập -->
+  <div class="form">
+    <div class="overlay">
+
+    </div>
+    <!-- Dựng form đăng nhập -->
+    <div class="form_login auth-form">
+      <div class="auth-form__container">
+        <div class="auth-form__header">
+          <h3 class="auth-form__heading">Đăng nhập</h3>
+          <span class="auth-form__switch-btn">Đăng ký</span>
+        </div>
+        <div class="auth-form__form">
+          <div class="auth-form-group">
+            <input type="text" class="auth-form__input" placeholder="Email/Số điện thoại/Tên đăng nhập">
+            <span class="show-warring"></span>
+          </div>
+          <div class="auth-form-group">
+            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+            <span class="show-warring"></span>
+          </div>
+        </div>
+        <div class="auth-form__aside">
+          <div class="auth-form__help">
+            <a href="" class="auth-form__help-link auth-form__help-forgot">
+              Quên mật khẩu
+            </a>
+            <span class="auth-form__help-link-separate"></span>
+            <a href="" class="auth-form__help-link">
+              Cần trợ giúp?
+            </a>
+          </div>
+        </div>
+        <div class="auth-form_controls">
+          <button class="btn auth-form_controls-back auth-form_controls-back-login">TRỞ LẠI</button>
+          <button id="submit-login-btn" class="btn btn--primary">ĐĂNG NHẬP</button>
+        </div>
+
+      </div>
+      <div class="auth-form_socials">
+        <a href="" class="auth-form_socials--facebook btn btn--size-s btn--with-icon">
+          <i class="auth-form_socials-icon">
+            <img src="./img/facebook.svg" alt="" class="classgigido">
+            <span class="auth-form_socials-title">
+              Đăng nhập với Facebook
+            </span>
+          </i>
+        </a>
+        <a href="" class="auth-form_socials--google btn btn--size-s btn--with-icon">
+          <i class="auth-form_socials-icon">
+            <img src="./img/google.svg" alt="" class="classgigido">
+            <span class="auth-form_socials-title">
+              Đăng nhập với Google
+            </span>
+          </i>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Dựng form đăng ký -->
+    <div class="form_create auth-form">
+      <div class="auth-form__container">
+        <div class="auth-form__header">
+          <h3 class="auth-form__heading">Đăng ký</h3>
+          <span class="auth-form__switch-btn">Đăng nhập</span>
+        </div>
+        <div class="auth-form__form">
+          <div class="auth-form-group">
+            <input type="text" class="auth-form__input" placeholder="Email/Tên đăng nhập/Mật khẩu ">
+            <span class="show-warring"></span>
+          </div>
+          <div class="auth-form-group">
+            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+            <span class="show-warring"></span>
+          </div>
+          <div class="auth-form-group">
+            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu ">
+            <span class="show-warring"></span>
+          </div>
+        </div>
+        <div class="auth-form__aside">
+          <p class="auth-form__policy_text">
+            Bằng việc đăng ký,bạn đã đồng ý với website về
+            <a href="" class="auth-form__text_link">Điều khoản dịch vụ</a> &
+            <a href="" class="auth-form__text_link">chính sách bảo mật</a>
+          </p>
+        </div>
+        <div class="auth-form_controls">
+          <button class="btn auth-form_controls-back auth-form_controls-back-create">TRỞ LẠI</button>
+          <button id="create-account-btn" class="btn btn--primary">ĐĂNG KÝ</button>
+        </div>
+
+      </div>
+      <div class="auth-form_socials">
+        <a href="" class="auth-form_socials--facebook btn btn--size-s btn--with-icon">
+          <i class="auth-form_socials-icon">
+            <img src="./img/facebook.svg" alt="" class="classgigido">
+            <span class="auth-form_socials-title">
+              Kết nối với Facebook
+            </span>
+          </i>
+        </a>
+        <a href="" class="auth-form_socials--google btn btn--size-s btn--with-icon">
+          <i class="auth-form_socials-icon">
+            <img src="./img/google.svg" alt="" class="classgigido">
+            <span class="auth-form_socials-title">
+              Kết nối với Google
+            </span>
+          </i>
+        </a>
+      </div>
+    </div>
+    <!-- Dựng form đăng bài -->
+    <div class="khung-post">
+      <div class="form-post tien-form">
+        <div class="tien-form__container">
+          <div class="tien-from__header">
+            <span class="tien-form__dangbai">ĐĂNG BÀI</span>
+            <li class="header__navbar-item header__navbar-item--strong create-btn">User
+              <img src="./img/user-solid.svg" alt="" class="classgigido">
+            </li>
+          </div>
+          <div class="tien-form__form">
+            <div class="tien-form__name">
+              <span class="tien-form__Address"> Địa chỉ cho thuê </span>
+              <div class="tien-form__tuychon">
+
+                <div class="tien-form__city">
+                  <label for="city">Thành phố/Tỉnh</label><br>
+                  <select id="city" name="city">
+                    <option value="thainguyen">Thái Nguyên</option>
+                  </select><br>
+                </div>
+
+                <div class="tien-form__district">
+                  <label for="district">Quận/Huyện:</label><br>
+                  <select id="District" name="District">
+                    <option value="thainguyen">TP.Thái Nguyên</option>
+                    <!--  <option value="thainguyen">Đại Từ</option>
+                    <option value="thainguyen">TP.Sông Công</option>
+                    <option value="thainguyen">Phú Bình</option>
+                    <option value="thainguyen">Phổ Yên</option>
+                    <option value="thainguyen">Đồng Hỷ</option> -->
+                  </select><br>
+                </div>
+
+                <div class="tien-form__ward">
+                  <label for="ward">Xã/Phường</label><br>
+                  <select id="ward" name="ward">
+                    <option value="tpthainguyen">Tân Lập </option>
+                    <!--  <option value="tpthainguyen">Thịnh Đán</option>
+                    <option value="tpthainguyen">Quyết Thắng</option>
+                    <option value="tpthainguyen">Quang Trung</option>
+                    <option value="tpthainguyen">Tân Thịnh</option>
+                    <option value="tpthainguyen">Đồng Quang</option> -->
+                  </select><br>
+                </div>
+
+                <div class="tien-form__village">
+                  <label for="village">Thôm/Xóm</label><br>
+                  <select id="village" name="village">
+                    <option village="quangtri">Xóm Nước Hai </option>
+                    <!-- <option village="quangtri">Sơn Tiến</option>
+                    <option village="quangtri">Xóm Bàu</option>
+                    <option village="quangtri">Xóm Trên</option>
+                    <option village="quangtri">Xóm Văn Minh</option>
+                    <option village="quangtri">Xóm karaok</option>
+                    <option village="quangtri">Xóm tay vịn</option>
+                    <option village="quangtri">Xóm bản</option> -->
+                  </select><br>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="tien-form__adrees">
+            <div class="tien-form__Streetnames">
+              <label for="Streetnames">Đường</label><br>
+              <select id="Streetnames" name="Streetnames">
+                <option value="soduong">Đường dân sinh Xóm Nước Hai.</option>
+                <option value="soduong">Đường Nguyễn Đình Chiễu</option>
+                <option value="soduong">Đường Lê Quý Đôn</option>
+                <option value="soduong">Đường Trần Đại Nghĩa</option>
+
+              </select><br>
+            </div>
+            <div class="form-group">
+              <label for="street_number" class="col-form-label">Số nhà</label>
+              <input type="text" class="form-control js-input-street-number" name="street_number" id="street_number"
+                value="">
+            </div>
+          </div>
+
+
+          <div class="tien-group__ggmap">
+            <div class="tien-group__ggmapcuthe">
+              <iframe id="consoleMaps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10194.387506932882!2d105.78993817683659!3d21.59086883739384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135276a7e780975%3A0xd3d10b601117327e!2zTmjDoCB2xINuIGjDs2EgeMOzbSBOxrDhu5tjIEhhaQ!5e0!3m2!1svi!2s!4v1706536880207!5m2!1svi!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="tien-form row mt-5">
+            <div class="col-md-12">
+              <h3>Thông tin mô tả</h3>
+            </div>
+          </div>
+          <div class="tien-form row mt-3">
+            <label for="post_cat" class="col-md-12 col-form-label">Loại hình cho thuê</label>
+            <div class="col-md-6">
+              <select class="form-control" id="post_cat" name="loai_chuyen_muc">
+                <option value="">-- Chọn loại chuyên mục --</option>
+
+                <option value="1">Phòng trọ,nhà trọ</option>
+                <option value="2">Nhà nguyên căn</option>
+                <optgroup label="Căn hộ">
+                  <option value="3">Căn hộ mini</option>
+                  <option value="7">Căn hộ,dịch vụ</option>
+                </optgroup>
+                <!-- <option value="4">Tìm người ở ghép</option> -->
+              </select>
+            </div>
+          </div>
+          <div class="tien-form__row">
+            <label for="post_title" class="col-md-12 col-form-label">Tiêu đề</label>
+            <div class="col-md-12">
+              <input type="text" class="tien-control js-title" name="tieu_de" id="post_title" value="" minlength="30"
+                maxlength="120" required="" data-msg-required="Tiêu đề không được để trống"
+                data-msg-minlength="Tiêu đề quá ngắn" data-msg-maxlength="Tiêu đề quá dài">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="post_content" class="col-md-12 col-form-label">Nội dung mô tả</label>
+            <div class="col-md-12">
+              <textarea class="form-control js-content" name="noi_dung" id="post_content" rows="10" required=""
+                minlength="100" data-msg-required="Bạn chưa nhập nội dung"
+                data-msg-minlength="Nội dung tối thiểu 100 kí tự"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="phone" class="col-md-12 col-form-label">Thông tin liên hệ</label>
+            <div class="col-md-6">
+              <div class="input-group mb-3">
+                <input id="ten_lien_he" type="text" name="ten_lien_he" class="form-control valid" readonly="readonly"
+                  required="" data-msg-required="Tên liên hệ" value="Võ Trường Tiến" aria-invalid="false">
+              </div>
+            </div>
+          </div>
+
+          <div class="tien-group__userphone">
+            <label for="phone" class="col-md-12 col-form-label">Điện thoại</label>
+            <div class="col-md-6">
+              <div class="input-group mb-3">
+                <input id="phone" type="number" name="phone" class="form-control" readonly="readonly" required=""
+                  data-msg-required="Số điện thoại" value="0333451130">
+              </div>
+            </div>
+          </div>
+
+          <div class="tien-group__userzalo">
+            <label for="zalo" class="col-md-12 col-form-label">Zalo</label>
+            <div class="col-md-6">
+              <div class="input-group">
+                <input id="zalo_link" name="zalo" pattern="[0-9.]+" type="text" class="form-control js-zalo" required=""
+                  data-msg-required="Bạn chưa nhập đường link zalo" data-msg-min="Đường link chưa đúng">
+                <div class="input-group-append">
+                </div>
+              </div>
+              <small class="form-text__text-mutedzalo">Hãy dán đường link Zalo của bạn vào đây</small>
+            </div>
+
+            <div class="form-group row">
+              <label for="giachothue" class="col-md-12 col-form-label">Giá cho thuê</label>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <input id="giachothue" name="gia" pattern="[0-9.]+" type="text" class="form-control js-gia-cho-thue"
+                    required="" data-msg-required="Bạn chưa nhập giá phòng" data-msg-min="Giá phòng chưa đúng">
+                  <div class="input-group-append">
+                  </div>
+                </div>
+                <small class="form-text__text-muted">Nhập đầy đủ số, ví dụ 1 triệu thì nhập là 1.000.000đ</small>
+              </div>
+              <label for="text_giachothue" id="text_giachothue" class="col-sm-12 control-label js-number-text"
+                style="color: red;"></label>
+            </div>
+
+            <div class="form-group row">
+              <label for="post_acreage" class="col-md-12 col-form-label">Diện tích</label>
+              <div class="col-md-6">
+                <div class="input-group mb-3">
+                  <input id="post_acreage" type="number" attern="[0-9.]+" name="dien_tich" max="1000"
+                    class="form-control" required="" data-msg-required="Bạn chưa nhập diện tích">
+                  <div class="input-group-append">
+                    <span class="input-group-text">m<sup>2</sup></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group row mt-5">
+              <div class="col-md-12">
+                <h3>Hình ảnh</h3>
+                <img src="" alt="" id="img-temp">
+                <div class="dangtaihinhanh">
+                  <div class="browse_photos js-dropzone dz-clickable">
+                    <label for="input-file">Thêm Ảnh</label>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                  </div>
+                </div>
+                <div class="list_photos row dropzone-previews" id="list-photos-dropzone-previews"></div>
+                <div id="tpl" style="display:none">
+                  <div class="photo_item col-md-2 col-3 js-photo-manual">
+                    <div class="photo"><img data-dz-thumbnail=""></div>
+                    <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress=""></span></div>
+                    <div class="bottom clearfix">
+                      <span class="photo_name" data-dz-name=""></span>
+                      <span class="photo_delete" data-dz-remove=""><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                          height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                          </path>
+                          <line x1="10" y1="11" x2="10" y2="17"></line>
+                          <line x1="14" y1="11" x2="14" y2="17"></line>
+                        </svg> Xóa</span>
+                    </div>
+                    <input name="" value="" type="hidden">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+        <div class="form-group row mt-5">
+          <div class="col-md-12">
+            <div class="completed">
+              <button type="submit" id="submit_post" class="btn btn-success mb-5 btn-lg btn-block js-btn-hoan-tat">Đăng
+                bài</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Dựng form đăng bài -->
+  <!-- <div class="list-view">
+    <div>
+      <div class="ListAds_ListAds__rEu_9 col-xs-12 no-padding">
+        <ul itemscope="" itemtype="http://schema.org/ItemList">
+          <div role="button" tabindex="0">
+            <li class="AdItem_wrapperAdItem__S6qPH  AdItem_big__70CJq" itemprop="itemListElement" itemscope=""
+              itemtype="http://schema.org/ListItem">
+              <meta itemprop="position" content="1"><a
+                href="/thue-phong-tro-quan-10-tp-ho-chi-minh/107062491.htm#px=SR-stickyad-[PO-1][PL-top]"
+                class="AdItem_adItem__gDDQT" itemprop="item">
+                <div class="Layout_left__fZNg_">
+                </div>
+
+                </main>
+                <footer class="footer">
+
+                </footer>
+
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
