@@ -1,0 +1,80 @@
+{
+    "local": [
+        {
+            "Thái Nguyên": [
+                {
+                    "TP Thái Nguyên": [
+                        {
+                            "Quyết Thắng": [
+                                {
+                                    "Nước Hai": [
+                                        "Nhà trọ 1",
+                                        "Nhà trọ 2",
+                                        "Nhà trọ 3"
+                                    ],
+                                    "Sơn Tiến": [
+                                        "Nhà trọ 1",
+                                        "Nhà trọ 2",
+                                        "Nhà trọ 3"
+                                    ]
+                                }
+                            ],
+                            "Đồng Quang": [
+                                {
+                                    "Tổ dân phố 1": [
+                                        "Nhà trọ 1",
+                                        "Nhà trọ 2"
+                                    ],
+                                    "Tổ dân phố 2": [
+                                        "Nhà trọ 1",
+                                        "Nhà trọ 2"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "Đại Từ": [
+                        {
+                            "An Khánh": [
+                                {
+                                    "An Bình": [
+                                        "Nhà trọ 1",
+                                        "Nhà trọ 2"
+                                    ],
+                                    "An Thanh": [
+                                        "Nhà trọ 1",
+                                        "Nhà trọ 2"
+                                    ]
+                                }
+                            ],
+                            "Bản Ngoại": [
+                                {
+                                    "Ba Giăng": [
+                                        "Nhà trọ 1",
+                                        "Nhà trọ 2"
+                                    ],
+                                    "Lê Lợi": [
+                                        "Nhà trọ 1",
+                                        "Nhà trọ 2"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "Phú Bình": [
+                        {
+                            "Đồng Liên": [
+                                {
+                                    "Đồng Tâm": [
+                                        "Nhà trọ 1",
+                                        "Nhà trọ 2"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
